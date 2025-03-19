@@ -1,6 +1,7 @@
 #pragma once
 #include <SDL.h>
 #include <vector>
+#include <cmath>
 #include "TextureManager.h"
 
 class Reel {
@@ -11,10 +12,10 @@ public:
     void startSpinning();
     void stopSpinning();
     bool isSpinning() const;
-    int getVisibleSymbol(int row) const; // Теперь возвращает число
+    int getVisibleSymbol(int row) const; // Г’ГҐГЇГҐГ°Гј ГўГ®Г§ГўГ°Г Г№Г ГҐГІ Г·ГЁГ±Г«Г®
 
 private:
-    std::vector<int> symbolValues; // 1 - круг, 2 - квадрат, 3 - треугольник, 4 - звезда
+    std::vector<int> symbolValues; // 1 - ГЄГ°ГіГЈ, 2 - ГЄГўГ Г¤Г°Г ГІ, 3 - ГІГ°ГҐГіГЈГ®Г«ГјГ­ГЁГЄ, 4 - Г§ГўГҐГ§Г¤Г 
     std::vector<SDL_Texture*> textures;
     SDL_Rect slots[4];
     int currentIndex;
